@@ -1,0 +1,26 @@
+ <!-- ### intro
+  ================================================== -->
+  <section id="intro" class="s-intro target-section">
+
+    <div class="row intro-content wide">
+
+      <div class="column">
+        <div class="text-pretitle with-line">
+          {{intro.title}}
+        </div>
+
+        <h1 class="text-huge-title">
+          {{intro.introduction1}}<br>
+          {{intro.introduction2}}
+          
+        </h1>
+      </div>
+      
+      <ul class="intro-social">
+        @for (handles of intro.socialMediaHandles; track handles){
+        <li><a href="{{handles.Url}}">{{handles.Name}}</a></li>
+        }
+      </ul>
+
+    </div> <!-- end intro content -->
+  </section> <!-- end s-intro -->

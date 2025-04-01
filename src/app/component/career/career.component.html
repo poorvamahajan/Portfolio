@@ -1,0 +1,53 @@
+<div class="row about-timelines" data-animate-block>
+
+    <div class="column lg-6 tab-12">
+  
+      <h2 class="text-pretitle" data-animate-el>
+        Experience
+      </h2>
+  
+      <div class="timeline" data-animate-el>
+        @for (job of about.Experience; track job){
+        <div class="timeline__block">
+          <div class="timeline__bullet"></div>
+          <div class="timeline__header">
+            <h4 class="timeline__title">{{job.JobName}}</h4>
+            <h5 class="timeline__meta">{{job.Designation}}</h5>
+            <p class="timeline__timeframe">{{job.TimePeriod}}</p>
+          </div>
+          <div class="timeline__desc">
+            <p>{{job.Description}}</p>
+          </div>
+        </div>
+      }
+  
+      </div> <!-- end timeline -->
+  
+    </div> <!-- end column -->
+  
+    <div class="column lg-6 tab-12">
+  
+      <h2 class="text-pretitle" data-animate-el>
+        Education
+      </h2>
+  
+      <div class="timeline" data-animate-el>
+        @for (Education of about.Education; track Education){
+        <div class="timeline__block">
+          <div class="timeline__bullet"></div>
+          <div class="timeline__header">
+            <h4 class="timeline__title">{{Education.Name}}</h4>
+            <h5 class="timeline__meta">{{Education.Course}}</h5>
+            <p class="timeline__timeframe">{{Education.FinalResult}}</p>
+            <p class="timeline__timeframe">{{Education.TimePeriod}}</p>
+            
+          </div>
+        </div>
+      }
+  
+      </div> <!-- end timeline -->
+  
+    </div> <!-- end column -->
+  
+  
+  </div> <!-- end about-timelines -->
