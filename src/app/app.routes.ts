@@ -10,6 +10,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
 export const routes: Routes = [
 
+    {title:"Poorva : Intro",path:'',component:IntroComponent},
     {title:"Poorva : Header",path:'header',component:HeaderComponent},
     {title:"Poorva : Intro",path:'intro',component:IntroComponent},
     {title:"Poorva : About",path:'about',component:AboutComponent},
