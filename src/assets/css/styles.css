@@ -1289,6 +1289,8 @@ a:focus,
 a:hover,
 a:active {
     color : var(--color-2);
+    background-color:#2c2c2d;
+      
 }
 
 a:hover,
@@ -3149,7 +3151,10 @@ img.u-pull-left {
         display : block;
         border  : none;
     }
-
+    .main-nav ul li.active-block {
+        background-color: #e0e0e0; /* Or your desired background color */
+      }
+      
     .main-nav ul li:first-child {
         display : none;
     }
