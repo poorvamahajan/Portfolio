@@ -10,11 +10,12 @@ import { CareerComponent } from './component/career/career.component';
 import { WorksComponent } from './component/works/works.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent,NavigationComponent,
-              IntroComponent,AboutComponent,ExpertiseComponent,CareerComponent,WorksComponent,ContactComponent,FooterComponent],
+              IntroComponent,AboutComponent,ExpertiseComponent,CareerComponent,WorksComponent,ContactComponent,FooterComponent,NotFoundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

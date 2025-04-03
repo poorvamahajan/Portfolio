@@ -8,6 +8,7 @@ import { CareerComponent } from './component/career/career.component';
 import { WorksComponent } from './component/works/works.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { NotFoundComponent } from './component/not-found/not-found.component';
 export const routes: Routes = [
 
     {title:"Poorva : Intro",path:'',component:IntroComponent},
@@ -17,5 +18,6 @@ export const routes: Routes = [
     {title:"Poorva : Expertise",path:'expertise',component:ExpertiseComponent},
     {title:"Poorva : Qualification & Experience",path:'career',component:CareerComponent},
     {title:"Poorva : Works",path:'works',component:WorksComponent},
-    {title:"Poorva : Contact",path:'contact',component:ContactComponent} 
+    {title:"Poorva : Contact",path:'contact',component:ContactComponent},
+    {title:"Page Not Found",path: '**', component: NotFoundComponent} 
 ];
