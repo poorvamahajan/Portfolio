@@ -3547,7 +3547,7 @@ img.u-pull-left {
     text-transform : uppercase;
     letter-spacing : .2em;
     color          : var(--color-text-light);
-    margin-top     : -.2rem;
+    margin-top     : 2rem;
 }
 
 /* ------------------------------------------------------------------- 
