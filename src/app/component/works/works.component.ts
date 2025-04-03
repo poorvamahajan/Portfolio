@@ -10,17 +10,18 @@ export class WorksComponent {
   project = [
     {
       Name: 'Portfolio',
-      url: "",
-      TechStack: "Angular, Typescript, Html, CSS, Javascript"
+      GitUrl: "https://github.com/poorvamahajan/Portfolio",
+      TechStack: "Angular, Typescript, Html, CSS, Javascript",
+      ProjectUrl : "https://www.google.co.in/"
     },
     {
       Name: 'Research Consultancy(MCA third Year Project)',
-      url: "https://github.com/poorvamahajan/Research-Consultancy-Portal",
+      GitUrl: "https://github.com/poorvamahajan/Research-Consultancy-Portal",
       TechStack: "PHP, HTML, CSS, Javascript, MYSQL"
     },
     {
       Name: 'E-Voting',
-      url: "",
+      GitUrl: "",
       TechStack: "",
       Description: ""
     }

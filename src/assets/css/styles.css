@@ -3638,7 +3638,8 @@ img.u-pull-left {
 .folio-list__item-link {
     display             : block;
     width               : 100%;
-    padding-left        : calc(5.5 * var(--space));
+    /* padding-left        : calc(5.5 * var(--space)); */
+    padding-left        : var(--space);
     color               : white;
     transition-duration : .5s;
     position            : relative;
