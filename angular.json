@@ -28,6 +28,7 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css",
               "src/assets/css/styles.css",
               "src/assets/css/vendor.css"
