@@ -4431,7 +4431,10 @@ img.u-pull-left {
         /* Needed for absolute children */
         padding: 1rem;
     }
-
+    .nav-item.active  {
+        color: #FFD700 ;
+        background-color: transparent !important;
+      }
     .nav-list {
         display: none;
         flex-direction: column;
@@ -4464,16 +4467,15 @@ img.u-pull-left {
     }
 
     .nav-item {
-        border-top: 1px solid #222;
+        /* border-top: 1px solid #222; */
         text-align: right !important;
         margin: 0 !important;
         padding: 0px 0px 0px 0px !important;
     }
     .hamburger {
         display: flex;
-        margin-left: 230px;
+        margin-left: 20px;
     }
-
     .nav-bar {
         padding: 1rem;
     }
