@@ -17,8 +17,13 @@
       <ul class="folio-list row block-lg-one-half block-stack-on-1000">
         @for (project of project; track project){
         <li class="folio-list__item column" data-animate-el>
-          <a class="folio-list__item-link" href="{{ project.ProjectUrl || 'javascript:void(0);' }}"
-            [class.disabled]="!project.ProjectUrl" [attr.title]="project.ProjectUrl ? 'Visit Project' : null">
+          <a class="folio-list__item-link"
+   [href]="project.ProjectUrl || '#'"
+   [class.disabled]="!project.ProjectUrl"
+   [attr.title]="project.ProjectUrl ? 'Visit Project' : null"
+   (click)="!project.ProjectUrl && $event.preventDefault()">
+          <!-- <a class="folio-list__item-link" href="{{ project.ProjectUrl || 'javascript:void(0);' }}"
+            [class.disabled]="!project.ProjectUrl" [attr.title]="project.ProjectUrl ? 'Visit Project' : null"> -->
             <div class="folio-list__item-text">
               <div class="folio-list__item-title">
                 {{project.Name}}
