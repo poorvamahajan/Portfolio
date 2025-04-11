@@ -9,6 +9,7 @@ import{RouterLink, RouterLinkActive} from '@angular/router'
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent implements AfterViewInit  {
+  
 ngAfterViewInit(): void {
     const hamburger = document.getElementById('hamburger');
     const navList = document.getElementById('navList');
@@ -17,17 +18,13 @@ ngAfterViewInit(): void {
       navList?.classList.toggle('show');
       console.log("CLicked");
     });
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navItems.forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
   }
-// @ViewChild('hamburger') hamburgerRef!: ElementRef;
-// @ViewChild('navList') navListRef!: ElementRef;
-
-// ngAfterViewInit(): void {
-//   const hamburger = this.hamburgerRef.nativeElement;
-//   const navList = this.navListRef.nativeElement;
-
-//   hamburger.addEventListener('click', () => {
-//     navList.classList.toggle('show');
-//   });
-// }
 
 }
