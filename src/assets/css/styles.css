@@ -4292,7 +4292,31 @@ img.u-pull-left {
 .ss-go-top svg path {
     fill: white;
 }
-
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent !important; /* ensure no gray bg */
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    background-color: transparent !important; /* no background on hover */
+  }
+  
+  
 /* ------------------------------------------------------------------- 
  * responsive:
  * footer
