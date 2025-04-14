@@ -4292,31 +4292,34 @@ img.u-pull-left {
 .ss-go-top svg path {
     fill: white;
 }
+
 .social-icons a {
     display: inline-block;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: transparent !important; /* ensure no gray bg */
+    background-color: transparent !important;
+    /* ensure no gray bg */
     transition: transform 0.3s ease;
-  }
-  
-  .social-icons a img {
+}
+
+.social-icons a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 50%;
     background-color: transparent;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     transform: scale(1.2);
-    background-color: transparent !important; /* no background on hover */
-  }
-  
-  
+    background-color: transparent !important;
+    /* no background on hover */
+}
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * footer
@@ -4450,7 +4453,86 @@ img.u-pull-left {
     background-color: transparent;
     /* or whatever color you prefer */
 }
-
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    list-style: none;
+  }
+  
+  .project-card {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1.5rem;
+  }
+  
+  .card-content h3 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 0.5rem;
+  }
+  .card-content {
+    /* border: 1px solid #ccc; */
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #252628;
+    transition: transform 0.2s ease;
+    height: 100%;
+  }
+  
+  .card-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content .tech {
+    font-size: 1.9rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content .desc {
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .source-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #888;
+    background: transparent;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: color 0.3s;
+    z-index: 2;
+  }
+  
+  .source-icon:hover {
+    color: #fff;
+    background: none;
+  }
+  
+  .source-icon svg {
+    pointer-events: none;
+  }
+  
 /* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
 
@@ -4521,4 +4603,26 @@ img.u-pull-left {
     .h3 {
         font-size: large !important;
     }
+
+    .project-grid {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .project-grid {
+        justify-content: center; 
+      }
+    
+      .project-card {
+        /* margin: 0 0;     */
+        max-width: 100%;           /* Responsive width */
+        /* border: 2px solid red; */
+
+      }
+      .s-works{
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+      .s-career,.s-expertise,.s-about{
+        padding-bottom: 2rem; 
+      }
 }
