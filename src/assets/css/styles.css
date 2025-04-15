@@ -4618,6 +4618,9 @@ img.u-pull-left {
         /* border: 2px solid red; */
 
       }
+      .s-intro{
+        padding-bottom: 10rem !important;
+      }
 }
 .s-works{
     padding-top: 5rem;
