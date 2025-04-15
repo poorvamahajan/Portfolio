@@ -4618,11 +4618,12 @@ img.u-pull-left {
         /* border: 2px solid red; */
 
       }
-      .s-works{
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-      }
-      .s-career,.s-expertise,.s-about{
-        padding-bottom: 2rem; 
-      }
 }
+.s-works{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .s-career,.s-expertise,.s-about,.s-intro{
+    padding-bottom: 2rem; 
+  }
+  
