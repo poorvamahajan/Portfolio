@@ -12,7 +12,7 @@ export class WorksComponent {
       Name: 'Portfolio',
       GitUrl: "https://github.com/poorvamahajan/Portfolio",
       TechStack: "Angular, Typescript, Html, CSS, Javascript",
-      ProjectUrl : "https://www.google.co.in/"
+      ProjectUrl : "/intro"
     },
     {
       Name: 'Research Consultancy(MCA third Year Project)',
@@ -26,4 +26,8 @@ export class WorksComponent {
       Description: ""
     }
   ];
+  openUrl(url: string) {
+    window.open(url, '_blank');
+  }
+  
 }

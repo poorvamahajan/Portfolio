@@ -8,11 +8,12 @@
     </div>
     <div class="column ss-copyright">
     </div>
-    <div class="column ss-copyright">
+    <div class="social-icons">
       @for (SocialMediaHandle of footer.socialMediaHandle; track SocialMediaHandle){
       <span>
-        <a href="{{SocialMediaHandle.url}}"><img src="{{SocialMediaHandle.ImageLocation}}"
-            alt="Instagram Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+        <a href="{{SocialMediaHandle.url}} " target="_blank" rel="noopener noreferrer">
+          <img src="{{SocialMediaHandle.ImageLocation}}"
+            alt="Logo" style="width: 20px; height: 20px; vertical-align: middle;">
         </a>
       </span>
     }
