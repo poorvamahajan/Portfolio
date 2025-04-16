@@ -21,13 +21,13 @@ export class CareerComponent {
       Name : "Vivekanand Education Society of Information Technology",
       Course : "Masters in Computer Application",
       TimePeriod : "2019-2022",
-      FinalResult :"CGPA:9.01"
+      FinalResult :"CGPI : 9.32"
     },
     {
       Name : "Model College",
       Course : "Bachelors in Information Technology",
       TimePeriod : "2016-2019",
-      FinalResult :"CGPA:9.01"
+      FinalResult :"CGPI : 8.38"
     }
   ]
   }

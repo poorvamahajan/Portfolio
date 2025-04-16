@@ -199,7 +199,7 @@
           style="cursor: pointer;">
           <h3>{{ project.Name }}</h3>
           <p class="tech">{{ project.TechStack }}</p>
-          <p class="desc">{{ project.Description || 'No description available.' }}</p>
+          <p class="desc">{{ project.Description || '' }}</p>
         </div>
           <!-- <ng-container *ngIf="project.ProjectUrl; else noLink">
             <a [href]="project.ProjectUrl" class="has-link" target="_blank" [attr.title]="'Visit Project'">
